@@ -15,11 +15,11 @@ bzip2 short_reads_file_name
   - The short reads file.
   - The jar file.
 
-4. The jar file and the DNA reference file need to be saved on your YARN cluster. So, download the content of your Amazon S3 bucket by running the following command on your YARN cluster:
+4. The jar file and the DNA reference file need to be saved on your Amazon [EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-overview-arch.html) cluster. So, download the content of your Amazon S3 bucket by running the following command on your Amazon EMR cluster:
 ```
 aws s3 cp s3://path/to/your/s3/bucket . --recursive
 ```
-  - Note that the short reads file need to be on S3 bucket and there is no need to download it to your YARN cluster.
+  - Note that the short reads file needs to be on S3 bucket and there is no need to download it to your Amazon EMR cluster.
 
 5. Start Spark-DNAligning by running the following command:
 ```
