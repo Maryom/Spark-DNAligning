@@ -25,3 +25,13 @@ aws s3 cp s3://path/to/your/s3/bucket . --recursive
 ```
 spark-submit --class com.ku.Aligning.DNACluster --driver-memory 4g --executor-memory 4g --executor-cores 3 --num-executors 3 dna.jar 16 36 /home/hadoop/s_suisLine.fa path/to/your/s3/bucket/100kGood.fa.bz2 path/to/your/s3/bucket/ Streptococcus_suis
 ```
+
+6. Download all the output files by running the following command:
+```
+aws s3 sync s3://path/to/your/s3/bucket .
+```
+
+7. Merge all the output files by running `toSam` script. You can find it in `helper_scripts` folder.
+```
+./toSam
+```
