@@ -1,0 +1,71 @@
+#!/bin/bash
+
+start=$SECONDS
+cd a
+
+cat part-0000* > partA.sam
+
+mv partA.sam ..
+
+cd ..
+
+cd c
+
+cat part-0000* > partC.sam
+
+mv partC.sam ..
+
+cd ..
+
+cd g
+
+cat part-0000* > partG.sam
+
+mv partG.sam ..
+
+cd ..
+
+cd t
+
+cat part-0000* > partT.sam
+
+mv partT.sam ..
+
+cd ..
+
+cd aunmapped
+
+cat part-0000* > partAunmapped.sam
+
+mv partAunmapped.sam ..
+
+cd ..
+
+cd cunmapped
+
+cat part-0000* > partCunmapped.sam
+
+mv partCunmapped.sam ..
+
+cd ..
+
+cd gunmapped
+
+cat part-0000* > partGunmapped.sam
+
+mv partGunmapped.sam ..
+
+cd ..
+
+cd tunmapped
+
+cat part-0000* > partTunmapped.sam
+
+mv partTunmapped.sam .. 
+
+cd ..
+
+cat part*.sam > out.sam
+end=$SECONDS
+
+echo "duration: $((end-start)) seconds."

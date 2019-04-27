@@ -1,1 +1,3 @@
 # Spark-DNAligning
+
+The evolution of technologies has unleashed a wealth of challenges by generating massive amount of data. Recently, biological data has increased exponentially, which has introduced several computational challenges. DNA short read alignment is an important problem in bioinformatics. The exponential growth in the number of short reads has increased the need for an ideal platform to accelerate the alignment process. Apache Spark is a cluster-computing framework that involves data parallelism and fault tolerance. Spark-DNAligning is a Spark-based algorithm to accelerate DNA short reads alignment problem.
